@@ -1,8 +1,8 @@
 import React from "react";
 import { GlobalStyle, theme, Container } from "./theme";
 import { ThemeProvider } from "@emotion/react";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import Links from "./components/Links";
 

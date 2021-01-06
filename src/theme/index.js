@@ -10,6 +10,9 @@ export { InputText } from "./InputText";
 export { TextArea } from "./TextArea";
 export { Button } from "./Button";
 
+export { TitleSection } from "./TitleSection";
+export { Line } from "./Line";
+
 export { CardContainer } from "./CardContainer";
 export { Card } from "./Card";
 export { CardHeader } from "./CardHeader";

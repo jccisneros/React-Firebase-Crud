@@ -13,14 +13,14 @@ export const Button = styled.button`
   width: 100%;
   cursor: pointer;
   border-radius: 15px;
-  box-shadow: 4px 5px 8px 2px rgba(0, 0, 0, 0.1);  
+  box-shadow: 4px 5px 8px 2px rgba(0, 0, 0, 0.1);
   transition: all 0.4s;
   &:hover {
     background-color: transparent;
     background-color: ${(props) => props.theme.colors.primaryLight};
     box-shadow: 4px 5px 12px 4px rgba(0, 0, 0, 0.2);
   }
-  @media(min-width: 769px){
+  @media (min-width: 769px) {
     width: 45%;
   }
 `;

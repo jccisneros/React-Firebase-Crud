@@ -3,11 +3,11 @@ import styled from "@emotion/styled";
 export const CardItemDelete = styled.span`
   font-size: 2rem;
   cursor: pointer;
-  display: flex;  
+  display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   margin-left: 1rem;
-  transition: color .1s;
+  transition: color 0.1s;
   &:hover {
     color: ${(props) => props.theme.colors.secondary};
   }
@@ -16,19 +16,19 @@ export const CardItemDelete = styled.span`
 export const CardItemEdit = styled.span`
   font-size: 2rem;
   cursor: pointer;
-  display: flex;  
+  display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   margin-left: 1rem;
-  transition: color .1s;
+  transition: color 0.1s;
   &:hover {
     color: green;
   }
 `;
 
 export const CardItemText = styled.p`
-  font-size: .5rem;
+  font-size: 0.5rem;
   font-weight: bold;
-  letter-spacing: .15rem;
-  margin-top: .3rem;  
+  letter-spacing: 0.15rem;
+  margin-top: 0.3rem;
 `;

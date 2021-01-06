@@ -8,6 +8,9 @@ export const CardTitle = styled.span`
 
 export const Title = styled.h2`
   font-size: 2.3rem !important;
+  @media(min-width: 480px){
+    font-size: 1.4rem !important;
+  }
   @media(min-width: 769px){
     font-size: 4rem !important;
   }

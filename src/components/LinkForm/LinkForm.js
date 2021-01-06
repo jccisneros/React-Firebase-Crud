@@ -11,7 +11,7 @@ import {
   Line,
 } from "../../theme";
 
-const LinkForm = (props) => {
+const LinkForm = ({addOrEditLink, currentId, setCurrentId, links}) => {
   const initialStateValues = {
     url: "",
     web: "",
@@ -46,10 +46,15 @@ const LinkForm = (props) => {
         pasuOnHover: true,
       });
     } else {
-      props.addOrEditLink(values);
+      addOrEditLink(values);
       setValues({ ...initialStateValues });
     }
   };
+
+  const onClear = (e) => {
+    e.preventDefault();    
+    setCurrentId("");
+  }
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -69,15 +74,15 @@ const LinkForm = (props) => {
   };
 
   useEffect(() => {
-    if (props.currentId === "") {
+    if (currentId === "") {
       setValues({ ...initialStateValues });
     } else {
-      getLinkById(props.currentId);
+      getLinkById(currentId);
     }
-  }, [props.currentId]);
+  }, [currentId]);
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form>
       <h2 style={{ textAlign: "center" }}> New Link Data </h2>
       <Line />
       <FormGroup>
@@ -111,7 +116,11 @@ const LinkForm = (props) => {
         />
       </FormGroup>
       <div style={{ display: "flex", alignItems: "center" }}>
-        <Button>{props.currentId === "" ? "Save" : "Update"}</Button>
+        <Button onClick={handleSubmit}>
+          {currentId === "" ? "Save" : "Update"}
+        </Button>
+        {currentId === "" ? null : <Button onClick={onClear}>Clear</Button>}
+        
       </div>
     </Form>
   );

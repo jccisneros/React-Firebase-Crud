@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
 
 export const Button = styled.button`
-  padding: 1.2rem 0;
   background-color: ${(props) => props.theme.colors.secondary};
   color: ${(props) => props.theme.colors.light};
   border: none;
   margin: 1.2rem auto;
-  margin-left: auto;
+  margin-left: 1rem;
+  padding: .7rem 0;
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 0.3rem;
@@ -22,5 +22,7 @@ export const Button = styled.button`
   }
   @media (min-width: 769px) {
     width: 45%;
+    margin-left: auto;
+    padding: 1.2rem 0;
   }
 `;

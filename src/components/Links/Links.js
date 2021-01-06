@@ -93,7 +93,7 @@ const Links = () => {
 
   return (
     <>
-      <LinkForm {...{ addOrEditLink, currentId, links }} />
+      <LinkForm {...{ addOrEditLink, currentId, setCurrentId, links }} />
 
       <CardContainer>
         <TitleSection>

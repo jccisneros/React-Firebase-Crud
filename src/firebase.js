@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCE6SF2ppm3b6VuAGu9sUXau3UxDQv7o7o",
+  apiKey: "APIKEY",
   authDomain: "practica-dab31.firebaseapp.com",
   databaseURL: "https://practica-dab31.firebaseio.com",
   projectId: "practica-dab31",
